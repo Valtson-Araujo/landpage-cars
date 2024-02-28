@@ -5,12 +5,38 @@
     font-style: normal;
 }
 
+body {
+    background-color: white;
+    padding-top: 0;
+}
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    height: 3.5rem;
+    padding-top: 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    margin-top: -3.7rem;
+    padding-left: 4rem;
+    padding-right: 4.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+header h1 {
+    margin-top: -0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 0;
+    background-color: #1D3461;
+    color: white;
+    width: 12rem;
+    text-align: center;
+    padding-top: 1rem;
+    height: 4.2rem;
 }
 
 .material-symbols-outlined {
@@ -21,11 +47,21 @@ header {
   'opsz' 24
 }
 
-nav ul {
+header nav ul {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
+}
+
+header nav ul li {
+    transition: 1s;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+header nav ul li:hover {
+    color: #1D3461;
 }
 
 .nav-items {
@@ -37,10 +73,12 @@ nav ul {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 38rem;
+    height: 43rem;
     padding-left: 4rem;
     padding-top: 11rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-top: 3.5rem;
 }
 
 #banner-one h2 {
@@ -66,7 +104,7 @@ nav ul {
 }
 
 #Reasons {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     margin-left: 4rem;
     margin-right: 4rem;
     display: flex;
@@ -125,14 +163,16 @@ nav ul {
 }
 
 #options {
-    width: 100%;
-    height: 47rem;
+    height: 49rem;
     background-color: #dbdad7;
     padding-top: 3rem;
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-bottom: 3rem;
     color: black;
     margin-top: 5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
 }
 
 #box-options {
@@ -149,17 +189,15 @@ nav ul {
 
 #options img {
     width: 27rem;
-    border-radius: 6px;
 }
 
 .cars-options {
     background-color: white;
     width: 27rem;
     color:#1D3461;
-    height: 23rem;
+    height: 22.3rem;
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
 }
 
 .cars-options h3 {
@@ -167,6 +205,7 @@ nav ul {
     margin-top: 0.5rem;
     font-weight: 700;
     font-size: 1.3rem;
+    margin-left: -0.9rem;
 }
 
 .cars-options a {
@@ -256,6 +295,8 @@ nav ul {
     grid-template-columns: auto auto;
     gap: 1.5rem;
     padding: 4rem;
+    margin-top: 2.3rem;
+    margin-bottom: 2.3rem;
 }
 
 #two-cars a {
@@ -315,11 +356,12 @@ nav ul {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 38rem;
+    height: 43rem;
     padding-left: 4rem;
     padding-top: 11rem;
     margin-bottom: 0;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
 }
 
 #banner-two h2 {
@@ -347,7 +389,7 @@ nav ul {
 #information {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 9rem;
+    margin-top: 13.5rem;
     width: 45rem;
     gap: 1rem;
     justify-content: center;
@@ -382,11 +424,13 @@ nav ul {
 
 #comemts {
     background-color: #dbdad7;
-    height: 60rem;
-    width: 100%;
+    height: 58.7rem;
     margin-top: 0;
-    padding-top: 13rem;
-    padding-left: 4rem;
+    padding-top: 10.5rem;
+    padding-left: 0;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: 2.5rem;
 }
 
 #comemts h1 {
@@ -561,11 +605,13 @@ nav ul {
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6rem;
 }
 
 #questions h1 {
     font-size: 2.5rem;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 details {
@@ -598,5 +644,88 @@ summary p {
     font-size: 2rem;
 }
 
+footer {
+    background-color: #1D3461;
+    height: 24rem;
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding-right: 10rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: -0.5rem;
+}
 
+#img-footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 20rem;
+    gap: 1rem;
+}
 
+#img-footer a {
+    cursor: pointer;
+}
+
+#img-footer div {
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    margin-top: 4rem;
+}
+
+#img-footer img {
+    width: 3rem;
+}
+
+#items-select {
+    width: 25rem;
+    height: 13rem;
+}
+
+#items-select a {
+    transition: 1s;
+    cursor: pointer;
+}
+
+#items-select a:hover {
+    font-size: 1.1rem;
+}
+
+#items-select ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 4rem;
+    margin-top: 4.2rem;
+}
+
+#items-select ul li {
+    list-style-type: none;
+    color: white;
+}
+
+#footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28rem;
+    width: 27rem;
+}
+
+#footer-logo h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#footer-logo h4 {
+    color: white;
+    margin-top: 0;
+}
