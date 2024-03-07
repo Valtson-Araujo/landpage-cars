@@ -5,20 +5,15 @@
     font-style: normal;
 }
 
-body {
-    background-color: white;
-    padding-top: 0;
-}
-
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 3.5rem;
+    height: 8vh;
+    width: 100%;
     padding-top: 0;
     position: fixed;
     background-color: white;
-    width: 100%;
     margin-top: -3.7rem;
     padding-left: 4rem;
     padding-right: 4.5rem;
@@ -35,7 +30,7 @@ header h1 {
     color: white;
     width: 12rem;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 1.1rem;
     height: 4.2rem;
 }
 
@@ -51,7 +46,7 @@ header nav ul {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-top: 1.2rem;
+    margin-top: 1.3rem;
 }
 
 header nav ul li {
@@ -72,8 +67,7 @@ header nav ul li:hover {
     background-image: url(../img/pexels-louis-gys-11922002.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 43rem;
+    height: 100vh;
     padding-left: 4rem;
     padding-top: 11rem;
     margin-left: -0.5rem;
@@ -188,14 +182,14 @@ header nav ul li:hover {
 }
 
 #options img {
-    width: 27rem;
+    width: 29.65vw;
 }
 
 .cars-options {
     background-color: white;
-    width: 27rem;
+    width: 29.65vw;
     color:#1D3461;
-    height: 22.3rem;
+    height: 22.6rem;
     display: flex;
     flex-direction: column;
 }
@@ -287,7 +281,7 @@ header nav ul li:hover {
 }
 
 .logos:hover {
-    background-color: gray;
+    background-color: rgb(238, 238, 238);
 }
 
 #two-cars {
@@ -308,8 +302,8 @@ header nav ul li:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 42rem;
-    height: 29rem;
+    width: 44.1vw;
+    height: 68.6vh;
     padding-top: 16rem;
     padding-left: 2rem;
     color: white;
@@ -317,8 +311,8 @@ header nav ul li:hover {
 }
 
 #first-car:hover {
-    width: 43rem;
-    height: 30rem;
+    width: 46vw;
+    height: 71vh;
 }
 
 #first-car h3 {
@@ -332,8 +326,8 @@ header nav ul li:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 42rem;
-    height: 29rem;
+    width: 44.1vw;
+    height: 68.6vh;
     padding-top: 16rem;
     padding-left: 2rem;
     color: white;
@@ -341,8 +335,8 @@ header nav ul li:hover {
 }
 
 #second-car:hover {
-    width: 43rem;
-    height: 30rem;
+    width: 46vw;
+    height: 71vh;
 }
 
 #second-car h3 {
@@ -352,11 +346,11 @@ header nav ul li:hover {
 }
 
 #banner-two {
-    background-image: url(../img/wp3109650-toyota-sw4-wallpapers.jpg);
+    background-image: url(../img/pexels-auto-records-10054994.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 43rem;
+    height: 100vh;
     padding-left: 4rem;
     padding-top: 11rem;
     margin-bottom: 0;
@@ -389,7 +383,7 @@ header nav ul li:hover {
 #information {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 13.5rem;
+    margin-top: 16.8rem;
     width: 45rem;
     gap: 1rem;
     justify-content: center;
@@ -424,7 +418,7 @@ header nav ul li:hover {
 
 #comemts {
     background-color: #dbdad7;
-    height: 58.7rem;
+    height: 58.2rem;
     margin-top: 0;
     padding-top: 10.5rem;
     padding-left: 0;
@@ -649,9 +643,8 @@ footer {
     height: 24rem;
     padding-left: 5rem;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     justify-content: space-between;
-    padding-right: 10rem;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     margin-bottom: -0.5rem;
@@ -685,7 +678,7 @@ footer {
 }
 
 #items-select {
-    width: 25rem;
+    width: 31rem;
     height: 13rem;
 }
 
@@ -700,9 +693,10 @@ footer {
 
 #items-select ul {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 4rem;
     margin-top: 4.2rem;
+    margin-right: 5rem;
 }
 
 #items-select ul li {
@@ -711,11 +705,10 @@ footer {
 }
 
 #footer-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 28rem;
+    display: block;
+    margin-left: 100%;
+    margin-right: 100%;
+    text-align: center;
     width: 27rem;
 }
 
@@ -728,4 +721,389 @@ footer {
 #footer-logo h4 {
     color: white;
     margin-top: 0;
+}
+
+@media screen and (max-width: 1520px) {
+    header {
+        height: 8.8vh;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+
+    header {
+        height: 8.8vh;
+    }
+
+    #Reasons-01 {
+        width: 23rem;
+        margin-left: 7rem;
+    }
+    
+    #Reasons-02 {
+        width: 23rem;
+        margin-left: 18rem;
+    }
+    
+    #Reasons-03 {
+        width: 24rem;
+        margin-left: 27rem;
+    }
+
+    #information {
+        margin-left: 16rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    header ul li {
+        display: none;
+    }
+
+    header {
+        padding-left: 2rem;
+    }
+
+    #banner-one {
+        padding-left: 1rem;
+        padding-top: 7rem;
+    }
+
+    #banner-one h2 {
+        width: 25rem;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    #Reasons {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 1rem;
+        padding-right: 3rem;
+    }
+
+    #Reasons #primary {
+        width: 25rem;
+    }
+
+    #Reasons #primary h2 {
+        text-align: left;
+        font-size: 2rem;
+    }
+    
+    #Reasons #primary p {
+        text-align: left;
+        width: 90vw;
+    }
+
+    #group {
+        flex-direction: column;
+    }
+
+    #Reasons-01 {
+        text-align: left;
+        width: 23rem;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+    }
+    
+    #Reasons-02 {
+        text-align: left;
+        width: 23rem;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+    }
+    
+    #Reasons-03 {
+        text-align: left;
+        width: 23rem;
+        margin-left: 0;
+    }
+
+    #options h2 {
+        text-align: left;
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    #options {
+        padding-top: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        height: 105rem;
+    }
+
+    #box-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cars-options {
+        width: 75vw;
+        height: 19rem;
+    }
+
+    #options img {
+        width: 75vw;
+        height: 12rem;
+    }
+
+    .description hr {
+        width: 69vw;
+    }
+
+    #logo-brands {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2.3rem;
+    }
+
+    #logo-brands #img {
+        width: 5rem;
+        height: 3rem;
+        margin-left: 0.85rem;
+    }
+    
+    #logo-brands #img-m {
+        width: 4rem;
+        margin-top: -0.43rem;
+        margin-left: 1.35rem;
+        height: 4rem;
+    }
+    
+    #logo-brands #img-t {
+        width: 4rem;
+        margin-top: -0.45rem;
+        margin-left: 1.4rem;
+        height: 4rem;
+    }
+    
+    #logo-brands #img-c {
+        width: 4.5rem;
+        margin-top: -1.2rem;
+        margin-left: 1.05rem;
+        height: 5.5rem;
+    }
+    
+    .logos {
+        width: 8rem;
+        height: 5rem;
+        padding-top: 1rem;
+    }
+
+    #two-cars {
+        grid-template-columns: auto;
+        padding: 1rem;
+        gap: 0.6rem;
+    }
+
+    #first-car {
+        width: 88vw;
+        height: 51vh;
+        padding-top: 13rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    
+    #first-car:hover {
+        width: 88vw;
+        height: 55vh;
+    }
+
+    #first-car h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+
+    #second-car {
+        width: 88vw;
+        height: 51vh;
+        padding-top: 13rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    
+    #second-car:hover {
+        width: 88vw;
+        height: 55vh;
+    }
+
+    #second-car h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+
+    #info-3 {
+        display: none;
+    }
+
+    #banner-two {
+       height: 90Vh;
+       padding-left: 1rem;
+    }
+
+    #banner-two h2 {
+        width: 20rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    #banner-two button {
+        border-radius: 6px;
+        width: 15.5rem;
+        height: 3.2rem;
+        font-size: 1rem;
+    }
+    
+    #information {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 3rem;
+        width: 16.3rem;
+        gap: 0.3rem;
+        margin-top: 13rem;
+    }
+
+    #information div {
+        background-color: white;
+        width: 11rem;
+        height: 7rem;
+        padding-left: 0.5rem;
+    }
+    
+    #information div hr {
+        background-color: #247BA0;
+        height: 0.3rem;
+        width: 5rem;
+        margin-left: 0;
+        margin-bottom: 1.2rem;
+    }
+    
+    #information div h3 {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    
+    #information div span {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    #comemts {
+        height: 77rem;
+        padding-top: 8rem;
+    }
+
+    #group-comemts-two {
+        display: none;
+    }
+
+    #group-comemts {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 4rem;
+    }
+
+    details {
+        width: 22rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        transition: 1s;
+    }
+
+    details p {
+        font-size: 1rem;
+    }
+
+    #icon-1, #icon-2, #icon-3, #icon-4, #icon-5{
+        margin-left: 4rem;
+        margin-top: 1.4rem;
+        font-size: 2rem;
+    }
+
+    footer {
+        background-color: #1D3461;
+        height: 20rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.5rem;
+    }
+
+    
+#img-footer {
+    width: 14rem;
+    margin-top: 1.8rem;
+    margin-left: 4.2rem;
+}
+
+#img-footer a {
+    cursor: pointer;
+}
+
+#img-footer div {
+    background-color: white;
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    padding-left: 0.87rem;
+    padding-top: 0.2rem;
+}
+
+#img-footer img {
+    width: 2rem;
+}
+
+#items-select {
+    width: 20rem;
+    height: 5rem;
+}
+
+#items-select a {
+    transition: 1s;
+    cursor: pointer;
+}
+
+#items-select a:hover {
+    font-size: 1.3rem;
+}
+
+#items-select ul {
+    gap: 2rem;
+    margin-right: 0;
+    margin-left: 1.8rem;
+    margin-top: 3rem;
+}
+
+#footer-logo {
+    width: 27rem;
+    margin-left: -2.4rem;
+    margin-right: 0;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+
+}
+
+#footer-logo h2 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+#footer-logo h4 {
+    margin-top: 0;
+    font-size: 0.6rem;
+}
 }
