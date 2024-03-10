@@ -42,6 +42,30 @@ header h1 {
   'opsz' 24
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#btn-menu {
+    display: none;
+}
+
+#btn-close {
+    display: none;
+}
+
 header nav ul {
     display: flex;
     flex-direction: row;
@@ -50,12 +74,17 @@ header nav ul {
 }
 
 header nav ul li {
-    transition: 1s;
     cursor: pointer;
     font-size: 1.1rem;
 }
 
-header nav ul li:hover {
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+
+header nav ul li a:hover {
     color: #1D3461;
 }
 
@@ -125,24 +154,27 @@ header nav ul li:hover {
 }
 
 #group {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 8fr 8fr;
     margin-top: 2rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 #Reasons-01 {
     width: 23rem;
-    margin-left: 13rem;
 }
 
 #Reasons-02 {
     width: 23rem;
-    margin-left: 18rem;
 }
 
 #Reasons-03 {
     width: 24rem;
-    margin-left: 32rem;
+    margin-left: 22rem;
 }
 
 .number {
@@ -157,9 +189,8 @@ header nav ul li:hover {
 }
 
 #options {
-    height: 49rem;
     background-color: #dbdad7;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
     padding-bottom: 3rem;
@@ -189,9 +220,9 @@ header nav ul li:hover {
     background-color: white;
     width: 29.65vw;
     color:#1D3461;
-    height: 22.6rem;
     display: flex;
     flex-direction: column;
+    padding-bottom: 0.7rem;
 }
 
 .cars-options h3 {
@@ -204,6 +235,8 @@ header nav ul li:hover {
 
 .cars-options a {
     cursor: pointer;
+    text-decoration: none;
+    color: #1D3461;
 }
 
 .description {
@@ -295,6 +328,8 @@ header nav ul li:hover {
 
 #two-cars a {
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 #first-car {
@@ -352,6 +387,7 @@ header nav ul li:hover {
     background-repeat: no-repeat;
     height: 100vh;
     padding-left: 4rem;
+    padding-right: 4rem;
     padding-top: 11rem;
     margin-bottom: 0;
     margin-left: -0.5rem;
@@ -387,7 +423,8 @@ header nav ul li:hover {
     width: 45rem;
     gap: 1rem;
     justify-content: center;
-    margin-left: 20.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #information div {
@@ -416,29 +453,29 @@ header nav ul li:hover {
     font-size: 1.6rem;
 }
 
-#comemts {
+#comments {
     background-color: #dbdad7;
-    height: 58.2rem;
     margin-top: 0;
     padding-top: 10.5rem;
     padding-left: 0;
+    padding-bottom: 7.2rem;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     margin-bottom: 2.5rem;
 }
 
-#comemts h1 {
-    display: block;
+#comments h1 {
     margin-top: 0;
     text-align: center;
     font-weight: 700;
     font-size: 2.5rem;
+    margin-bottom: 4rem;
 }
 
-#comemt-one {
+#comment-one, #comment-two, #comment-three, #comment-four, #comment-five {
     background-color: white;
     width: 20rem;
-    height: 15rem;
+    height: 14rem;
     padding-top: 2rem;
     margin-top: -2.6rem;
     padding-left: 1rem;
@@ -446,143 +483,36 @@ header nav ul li:hover {
     text-align: center;
 }
 
-#formated-comemt-one {
+#formated-comment-one, #formated-comment-two, #formated-comment-three, #formated-comment-four, #formated-comment-five {
     width: 20rem;
     height: 15rem;
 }
 
-#formated-comemt-one img {
-    width: 4.5rem;
-    height: 4.5rem;
+#formated-comment-one img, #formated-comment-two img, #formated-comment-three img, #formated-comment-four img, #formated-comment-five img  {
+    width: 4.2rem;
+    height: 4.2rem;
     border-radius: 50%;
-    margin-left: 7.5rem;
+    margin-left: 7.6rem;
 }
 
-#comemt-one p {
+#comment-one p, #comment-two p, #comment-three p, #comment-four p, #comment-five p  {
     font-weight: 700;
+    text-align: left;
 }
 
-#comemt-two {
-    background-color: white;
-    width: 20rem;
-    height: 15rem;
-    padding-top: 2rem;
-    margin-top: -2.6rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-}
-
-#formated-comemt-two {
-    width: 20rem;
-    height: 15rem;
-}
-
-#formated-comemt-two img {
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-    margin-left: 7.5rem;
-}
-
-#comemt-two p {
-    font-weight: 700;
-}
-
-#comemt-three {
-    background-color: white;
-    width: 20rem;
-    height: 15rem;
-    padding-top: 2rem;
-    margin-top: -2.6rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-}
-
-#formated-comemt-three {
-    width: 20rem;
-    height: 15rem;
-}
-
-#formated-comemt-three img {
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-    margin-left: 7.5rem;
-}
-
-#comemt-three p {
-    font-weight: 700;
-}
-
-#group-comemts {
+#group-comments {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 8rem;
 }
 
-#group-comemts-two {
+#group-comments-two {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     gap: 8rem;
-}
-
-#comemt-four {
-    background-color: white;
-    width: 20rem;
-    height: 15rem;
-    padding-top: 2rem;
-    margin-top: -2.6rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-}
-
-#formated-comemt-four {
-    width: 20rem;
-    height: 15rem;
-}
-
-#formated-comemt-four img {
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-    margin-left: 7.5rem;
-}
-
-#comemt-four p {
-    font-weight: 700;
-}
-
-#comemt-five {
-    background-color: white;
-    width: 20rem;
-    height: 15rem;
-    padding-top: 2rem;
-    margin-top: -2.6rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-}
-
-#formated-comemt-five {
-    width: 20rem;
-    height: 15rem;
-}
-
-#formated-comemt-five img {
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-    margin-left: 7.5rem;
-}
-
-#comemt-five p {
-    font-weight: 700;
 }
 
 .material-symbols-outlined {
@@ -602,10 +532,12 @@ header nav ul li:hover {
     margin-bottom: 6rem;
 }
 
-#questions h1 {
+#questions-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-align: left;
+    width: 45rem;
 }
 
 details {
@@ -643,7 +575,7 @@ footer {
     height: 24rem;
     padding-left: 5rem;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -685,6 +617,8 @@ footer {
 #items-select a {
     transition: 1s;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 #items-select a:hover {
@@ -723,387 +657,3 @@ footer {
     margin-top: 0;
 }
 
-@media screen and (max-width: 1520px) {
-    header {
-        height: 8.8vh;
-    }
-}
-
-@media screen and (max-width: 1420px) {
-
-    header {
-        height: 8.8vh;
-    }
-
-    #Reasons-01 {
-        width: 23rem;
-        margin-left: 7rem;
-    }
-    
-    #Reasons-02 {
-        width: 23rem;
-        margin-left: 18rem;
-    }
-    
-    #Reasons-03 {
-        width: 24rem;
-        margin-left: 27rem;
-    }
-
-    #information {
-        margin-left: 16rem;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    header ul li {
-        display: none;
-    }
-
-    header {
-        padding-left: 2rem;
-    }
-
-    #banner-one {
-        padding-left: 1rem;
-        padding-top: 7rem;
-    }
-
-    #banner-one h2 {
-        width: 25rem;
-        text-align: left;
-        font-size: 2rem;
-    }
-
-    #Reasons {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 1rem;
-        padding-right: 3rem;
-    }
-
-    #Reasons #primary {
-        width: 25rem;
-    }
-
-    #Reasons #primary h2 {
-        text-align: left;
-        font-size: 2rem;
-    }
-    
-    #Reasons #primary p {
-        text-align: left;
-        width: 90vw;
-    }
-
-    #group {
-        flex-direction: column;
-    }
-
-    #Reasons-01 {
-        text-align: left;
-        width: 23rem;
-        margin-bottom: 1.5rem;
-        margin-left: 0;
-    }
-    
-    #Reasons-02 {
-        text-align: left;
-        width: 23rem;
-        margin-bottom: 1.5rem;
-        margin-left: 0;
-    }
-    
-    #Reasons-03 {
-        text-align: left;
-        width: 23rem;
-        margin-left: 0;
-    }
-
-    #options h2 {
-        text-align: left;
-        font-size: 2.5rem;
-        width: 20rem;
-    }
-
-    #options {
-        padding-top: 1.5rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        height: 105rem;
-    }
-
-    #box-options {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .cars-options {
-        width: 75vw;
-        height: 19rem;
-    }
-
-    #options img {
-        width: 75vw;
-        height: 12rem;
-    }
-
-    .description hr {
-        width: 69vw;
-    }
-
-    #logo-brands {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 2.3rem;
-    }
-
-    #logo-brands #img {
-        width: 5rem;
-        height: 3rem;
-        margin-left: 0.85rem;
-    }
-    
-    #logo-brands #img-m {
-        width: 4rem;
-        margin-top: -0.43rem;
-        margin-left: 1.35rem;
-        height: 4rem;
-    }
-    
-    #logo-brands #img-t {
-        width: 4rem;
-        margin-top: -0.45rem;
-        margin-left: 1.4rem;
-        height: 4rem;
-    }
-    
-    #logo-brands #img-c {
-        width: 4.5rem;
-        margin-top: -1.2rem;
-        margin-left: 1.05rem;
-        height: 5.5rem;
-    }
-    
-    .logos {
-        width: 8rem;
-        height: 5rem;
-        padding-top: 1rem;
-    }
-
-    #two-cars {
-        grid-template-columns: auto;
-        padding: 1rem;
-        gap: 0.6rem;
-    }
-
-    #first-car {
-        width: 88vw;
-        height: 51vh;
-        padding-top: 13rem;
-        padding-left: 0.7rem;
-        padding-right: 0.7rem;
-    }
-    
-    #first-car:hover {
-        width: 88vw;
-        height: 55vh;
-    }
-
-    #first-car h3 {
-        font-size: 1.5rem;
-        margin-bottom: 0.7rem;
-    }
-
-    #second-car {
-        width: 88vw;
-        height: 51vh;
-        padding-top: 13rem;
-        padding-left: 0.7rem;
-        padding-right: 0.7rem;
-    }
-    
-    #second-car:hover {
-        width: 88vw;
-        height: 55vh;
-    }
-
-    #second-car h3 {
-        font-size: 1.5rem;
-        margin-bottom: 0.7rem;
-    }
-
-    #info-3 {
-        display: none;
-    }
-
-    #banner-two {
-       height: 90Vh;
-       padding-left: 1rem;
-    }
-
-    #banner-two h2 {
-        width: 20rem;
-        font-size: 2rem;
-        text-align: left;
-    }
-    
-    #banner-two button {
-        border-radius: 6px;
-        width: 15.5rem;
-        height: 3.2rem;
-        font-size: 1rem;
-    }
-    
-    #information {
-        display: grid;
-        grid-template-columns: auto auto;
-        margin-left: 3rem;
-        width: 16.3rem;
-        gap: 0.3rem;
-        margin-top: 13rem;
-    }
-
-    #information div {
-        background-color: white;
-        width: 11rem;
-        height: 7rem;
-        padding-left: 0.5rem;
-    }
-    
-    #information div hr {
-        background-color: #247BA0;
-        height: 0.3rem;
-        width: 5rem;
-        margin-left: 0;
-        margin-bottom: 1.2rem;
-    }
-    
-    #information div h3 {
-        font-weight: 700;
-        font-size: 1rem;
-        margin-bottom: 0;
-    }
-    
-    #information div span {
-        font-weight: 700;
-        font-size: 1.4rem;
-    }
-
-    #comemts {
-        height: 77rem;
-        padding-top: 8rem;
-    }
-
-    #group-comemts-two {
-        display: none;
-    }
-
-    #group-comemts {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 4rem;
-    }
-
-    details {
-        width: 22rem;
-        padding-left: 1rem;
-        padding-top: 1rem;
-        padding-right: 1rem;
-        transition: 1s;
-    }
-
-    details p {
-        font-size: 1rem;
-    }
-
-    #icon-1, #icon-2, #icon-3, #icon-4, #icon-5{
-        margin-left: 4rem;
-        margin-top: 1.4rem;
-        font-size: 2rem;
-    }
-
-    footer {
-        background-color: #1D3461;
-        height: 20rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: -0.5rem;
-        margin-right: -0.5rem;
-        margin-bottom: -0.5rem;
-    }
-
-    
-#img-footer {
-    width: 14rem;
-    margin-top: 1.8rem;
-    margin-left: 4.2rem;
-}
-
-#img-footer a {
-    cursor: pointer;
-}
-
-#img-footer div {
-    background-color: white;
-    width: 3.7rem;
-    height: 3.7rem;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 0;
-    padding-left: 0.87rem;
-    padding-top: 0.2rem;
-}
-
-#img-footer img {
-    width: 2rem;
-}
-
-#items-select {
-    width: 20rem;
-    height: 5rem;
-}
-
-#items-select a {
-    transition: 1s;
-    cursor: pointer;
-}
-
-#items-select a:hover {
-    font-size: 1.3rem;
-}
-
-#items-select ul {
-    gap: 2rem;
-    margin-right: 0;
-    margin-left: 1.8rem;
-    margin-top: 3rem;
-}
-
-#footer-logo {
-    width: 27rem;
-    margin-left: -2.4rem;
-    margin-right: 0;
-    margin-top: 7rem;
-    margin-bottom: 2rem;
-
-}
-
-#footer-logo h2 {
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
-}
-
-#footer-logo h4 {
-    margin-top: 0;
-    font-size: 0.6rem;
-}
-}

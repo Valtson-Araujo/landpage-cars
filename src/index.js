@@ -7,7 +7,14 @@ document.querySelectorAll("summary").forEach((i, n) => {
     } else {
         icon.textContent = "expand_more"
     }
-
     })
+})
+
+document.getElementById('btn-menu').addEventListener('click', () => {
+    document.querySelector('header nav').classList.add('show-menu')
+})
+
+document.getElementById('btn-close').addEventListener('click', () => {
+    document.querySelector('header nav').classList.remove('show-menu')
 })
 
